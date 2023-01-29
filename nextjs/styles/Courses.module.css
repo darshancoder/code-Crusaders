@@ -1,0 +1,52 @@
+
+.title
+{
+    font-weight:600 ;
+    font-size:42px;
+    margin:4rem 0;
+}
+
+
+.courses
+{
+    width:90%;
+    margin:auto;
+    margin-top:10rem
+}
+
+.container
+{
+    width:90%;
+    margin:auto;
+    display :grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+}
+
+.course
+{
+    background:var(--color-bg);
+    text-align:center;
+    border:1px solid transparent;
+    transition :var(--transition)
+}
+
+
+.course:hover
+{
+    background:transparent;
+    border-color:var(--color-primary)
+}
+.course_info
+{
+padding:2rem;
+}
+
+
+.course_info .para
+{
+margin:1.2rem 0 2rem;
+font-size:0.9rem;
+text-align:left;
+color:white
+}

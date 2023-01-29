@@ -1,0 +1,144 @@
+
+.header {
+    position:sticky;
+    width: 100%;   
+    top: 0;
+   right: 0;
+   /* overflow: wrap; */
+   z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 15px 10%;
+    background: var(--bg-color);
+    /* background-color: var(--bg-Color); */
+    color: var(--textColor);
+    overflow: hidden;
+}
+
+.logo {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.logo img {
+	position: absolute;
+	width: 85px;
+	/* border-radius: 50%; */
+}
+.navbar
+    {display: flex}
+
+    .navbar a{
+        color:var(--text-color);
+        font-size:1.1rem;
+        font-weight: 500;
+        padding: 5px 0;
+        margin: 0px 30px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        color:var(--main-color)
+    }
+
+    .navbar a.active{
+        color: var(--main-color);
+    }
+
+    .main,.user
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .main a{
+        margin-right: 25px;
+        margin-left: 10px;
+        color:var(--text-color);
+        font-size:1.1rem;
+        font-weight: 500;
+        transition: all .50s ease;
+    }
+
+    .user i
+        {
+            color: var(--main-color);
+            font-size: 28px;
+            margin-left: 7px;
+           }
+
+           .main a:hover{
+            color: var(--main-color);
+           }
+    
+          .main_icon{
+            font-size: 35px;
+            color: var(--text-color);
+            cursor: pointer;
+            z-index: 1000;
+            display: none;
+           }
+
+         
+        
+           
+
+        .navbtn {
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--textColor);
+            visibility: hidden;
+            opacity: 0;
+            font-size: 1.8rem;
+        }
+
+
+           @media(max-width:1280px){   
+            .navbar a{
+                padding: 5px 0;
+                margin:0px 20px
+            }
+           }
+
+           @media(max-width:1090px){
+            .header .navbtn {
+                visibility: visible;
+                opacity: 1;
+            }
+            .navbar{
+                position: absolute;
+                top:100%;
+                right:2%;
+                width:220px;
+                height: 12vh;
+                background-color: var(--main-color);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                border-radius: 10px;
+                transition:all .50s ease ;
+            }
+            .header
+            {
+            padding: 15px 10%;  
+            }
+           }
+
+
+
+
+
+
+
+
+	
+
+	
+

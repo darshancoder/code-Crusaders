@@ -1,0 +1,115 @@
+.about_ache
+{
+margin-top:5rem;
+}
+
+
+.title
+{
+    font-weight:600 ;
+    font-size:42px;
+    margin:4rem 0;
+    color:var(--color-primary)
+}
+
+.container
+{
+display:grid;
+grid-template-columns:40% 52%;
+gap:5rem;
+align-items:center
+}
+
+.right > p
+{
+margin:1.6rem 0 2.5rem;
+}
+
+.cards
+{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1.5rem;
+}
+
+
+.card
+{
+    background:var(--color-bg1);
+    padding:1.6rem;
+    border-radius:1rem;
+    text-align:center;
+    transition:var(--transition)
+}
+
+.card:hover
+{
+    background:var(--color-bg2);
+    box-shadow:0 1rem 1rem rgba(0,0,0,0.3)
+}
+
+.icon
+{
+    background:var(--color-danger);
+    padding:0.2rem;
+    border-radius:1rem;
+    display:inline-block;
+    /* margin-bottom:2rem; */
+}
+.card:nth-child(2) .icon
+{
+    background:var(--color-success);
+   
+}
+
+.card:nth-child(3) .icon
+{
+    background:var(--color-primary);
+   
+}
+
+
+@media(max-width:1280px){   
+    .container
+    {
+    display:grid;
+    grid-template-columns:35% 45%;
+    gap:5rem;
+    }
+   }
+
+   @media(max-width:1090px){
+   
+    .container
+    {
+    display:grid;
+    grid-template-columns:30% 41%;
+    }
+   }
+   @media(max-width:950px){
+   
+    .container
+    {
+    display:block;
+    }
+    .icon 
+    {
+        width:"20%"
+    }
+   }
+    @media(max-width:650px){
+    .right
+{
+    display:none;
+}}
+
+
+
+
+
+
+
+
+
+
+
